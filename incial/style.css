@@ -1,14 +1,13 @@
 :root {
-    /* PALETA EXTRAÍDA DA PÁGINA SISVET */
-    --azul-gov: #1f52c0;      /* Header / botões principais */
-    --azul-escuro: #123064;   /* Títulos SISVET / footer */
-    --azul-claro: #eaf1fb;    /* Fundo da página e lado direito */
-    --azul-botao: #1351b4;    /* Botão Entrar / Acessar minha conta */
-    --azul-link: #1351b4;     /* Links "Esqueci minha senha" */
-    --azul-borda: #c5d6ef;    /* Borda dos inputs e botão gov.br */
-    --verde: #3fc47b;         /* Detalhe verde do banner */
-    --amarelo: #ffd94d;       /* Detalhe amarelo do banner */
-    --texto: #2c3440;         /* Texto do parágrafo */
+    --azul-gov: #1f52c0;     
+    --azul-escuro: #123064;   
+    --azul-claro: #eaf1fb;    
+    --azul-botao: #1351b4;    
+    --azul-link: #1351b4;     
+    --azul-borda: #c5d6ef;    
+    --verde: #3fc47b;       
+    --amarelo: #ffd94d;      
+    --texto: #2c3440;         
     --cinza: #5a6b7f;
 }
 
@@ -26,7 +25,7 @@ body {
     min-height: 100vh;
 }
 
-/* TOPO E RODAPÉ - mesmo azul da barra do SISVET */
+
 .topo, .rodape {
     background: var(--azul-gov);
     color: white;
@@ -36,11 +35,11 @@ body {
     gap: 15px;
 }
 
-.logo-gov {
+.logo-sisvet {
     font-size: 26px;
     font-weight: 300;
 }
-.logo-gov b { font-weight: 800; }
+.logo-sisvet b { font-weight: 800; }
 
 .btn-entrar-gov {
     margin-left: auto;
@@ -52,7 +51,7 @@ body {
     border-radius: 6px;
 }
 
-/* CONTAINER */
+
 .container {
     display: flex;
     flex: 1;
@@ -153,7 +152,7 @@ input:focus { border-color: var(--azul-botao); }
     text-decoration: none;
 }
 
-/* Botão principal - igual ao "Acessar minha conta" */
+
 .btn-entrar {
     width: 100%;
     background: var(--azul-botao);
@@ -200,7 +199,7 @@ input:focus { border-color: var(--azul-botao); }
 }
 .cadastro a { color: var(--azul-link); text-decoration: none; }
 
-/* LADO DIREITO - mesmo fundo claro do SISVET */
+
 .lado-direito {
     background: var(--azul-gov);
     width: 420px;
@@ -235,7 +234,7 @@ input:focus { border-color: var(--azul-botao); }
 .pata-1 { top: 40px; left: 70px; transform: rotate(-20deg); font-size: 60px; }
 .pata-2 { bottom: 40px; right: 50px; }
 
-/* RODAPÉ */
+
 .rodape {
     justify-content: space-between;
     padding: 12px 30px;
