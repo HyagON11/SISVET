@@ -1,0 +1,247 @@
+:root {
+    /* PALETA EXTRAÍDA DA PÁGINA SISVET */
+    --azul-gov: #1f52c0;      /* Header / botões principais */
+    --azul-escuro: #123064;   /* Títulos SISVET / footer */
+    --azul-claro: #eaf1fb;    /* Fundo da página e lado direito */
+    --azul-botao: #1351b4;    /* Botão Entrar / Acessar minha conta */
+    --azul-link: #1351b4;     /* Links "Esqueci minha senha" */
+    --azul-borda: #c5d6ef;    /* Borda dos inputs e botão gov.br */
+    --verde: #3fc47b;         /* Detalhe verde do banner */
+    --amarelo: #ffd94d;       /* Detalhe amarelo do banner */
+    --texto: #2c3440;         /* Texto do parágrafo */
+    --cinza: #5a6b7f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background: var(--azul-claro);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* TOPO E RODAPÉ - mesmo azul da barra do SISVET */
+.topo, .rodape {
+    background: var(--azul-gov);
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    gap: 15px;
+}
+
+.logo-gov {
+    font-size: 26px;
+    font-weight: 300;
+}
+.logo-gov b { font-weight: 800; }
+
+.btn-entrar-gov {
+    margin-left: auto;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    background: rgba(255,255,255,0.12);
+    padding: 8px 14px;
+    border-radius: 6px;
+}
+
+/* CONTAINER */
+.container {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.card {
+    background: white;
+    padding: 30px 35px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(19,81,180,0.08);
+    width: 420px;
+    z-index: 2;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.icone-pata {
+    background: var(--azul-gov);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icone-pata svg { width: 28px; }
+
+.logo-area h1 {
+    color: var(--azul-escuro);
+    font-size: 22px;
+    line-height: 1;
+    font-weight: 800;
+}
+.logo-area p {
+    color: var(--cinza);
+    font-size: 11px;
+}
+
+.card h2 {
+    color: var(--azul-escuro);
+    font-size: 20px;
+    margin-bottom: 18px;
+    font-weight: 800;
+}
+
+label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--texto);
+    margin: 12px 0 4px;
+}
+
+input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid var(--azul-borda);
+    border-radius: 6px;
+    outline: none;
+    font-size: 14px;
+    background: #fff;
+}
+input:focus { border-color: var(--azul-botao); }
+
+.campo-senha { position: relative; }
+.olho {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.opcoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 14px 0;
+    font-size: 13px;
+}
+.lembrar {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: normal;
+    margin: 0;
+}
+.opcoes a {
+    color: var(--azul-link);
+    text-decoration: none;
+}
+
+/* Botão principal - igual ao "Acessar minha conta" */
+.btn-entrar {
+    width: 100%;
+    background: var(--azul-botao);
+    color: white;
+    border: none;
+    padding: 13px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.btn-entrar:hover { background: #0e45a1; }
+
+.divisor {
+    text-align: center;
+    margin: 16px 0;
+    border-bottom: 1px solid var(--azul-borda);
+    line-height: 0.1em;
+    color: #999;
+    font-size: 13px;
+}
+.divisor span { background: white; padding: 0 10px; }
+
+.btn-gov {
+    width: 100%;
+    background: white;
+    border: 1.5px solid var(--azul-borda);
+    padding: 11px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--azul-escuro);
+}
+
+.cadastro {
+    text-align: center;
+    margin-top: 18px;
+    font-size: 13px;
+    color: var(--cinza);
+}
+.cadastro a { color: var(--azul-link); text-decoration: none; }
+
+/* LADO DIREITO - mesmo fundo claro do SISVET */
+.lado-direito {
+    background: var(--azul-gov);
+    width: 420px;
+    min-height: 540px;
+    border-radius: 0 8px 8px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    padding: 30px;
+}
+
+.texto-promo { text-align: center; z-index: 2; color: white; }
+.texto-promo h3 {
+    color: white;
+    font-size: 26px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+.texto-promo p {
+    color: #dbe7f5;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.pata-fundo {
+    position: absolute;
+    font-size: 90px;
+    opacity: 0.2;
+}
+.pata-1 { top: 40px; left: 70px; transform: rotate(-20deg); font-size: 60px; }
+.pata-2 { bottom: 40px; right: 50px; }
+
+/* RODAPÉ */
+.rodape {
+    justify-content: space-between;
+    padding: 12px 30px;
+    font-size: 13px;
+}
+.rodape div:first-child { display: flex; align-items: center; gap: 10px; }
+.copy { color: #b9d0f0; font-size: 11px; }
+.links { display: flex; gap: 15px; }
+.links a { color: white; text-decoration: none; font-size: 12px; }
