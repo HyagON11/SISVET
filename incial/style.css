@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background: #f2f6fb;
+}
+
+.topo{
+  background:#0A2E5C;
+  color:#FFF;
+  height:56px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 20px;
+  position:relative;
+}
+
+.topo .logo{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  font-weight:bold;
+  font-size:18px;
+}
+
+.topo .icone-logo{
+  background:#FFF;
+  color:#0A2E5C;
+  width:28px;
+  height:28px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:16px;
+}
+
+.perfil summary{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  list-style:none;
+  cursor:pointer;
+}
+
+.perfil summary::-webkit-details-marker{ display:none; }
+
+.perfil img{
+  width:36px;
+  height:36px;
+  border-radius:50%;
+  object-fit:cover;
+  border:2px solid #FFF;
+}
+
+.perfil .menu-perfil{
+  position:absolute;
+  top:56px;
+  right:10px;
+  background:#FFF;
+  border:1px solid #DCE2E8;
+  border-radius:8px;
+  padding:8px;
+  width:140px;
+  z-index:10;
+}
+
+.perfil .menu-perfil a{
+  display:block;
+  color:#1A2C3D;
+  text-decoration:none;
+  padding:8px;
+  font-size:14px;
+  border-radius:6px;
+}
+
+.perfil .menu-perfil a:hover{
+  background:#F2F6FB;
+}
+
+.sidebar{
+  width:200px;
+  background:#0A2E5C;
+  float:left;
+  min-height:135vh;
+}
+
+.sidebar-menu a{
+  display:block;
+  color:#FFF;
+  text-decoration:none;
+  padding:14px 20px;
+}
+
+.sidebar-menu a:hover{ 
+    background:#1351B4; 
+    border-radius: 6px;
+    
+}
+
+.conteudo{
+  margin-left:200px;
+  padding:24px;
+}
+
+.consulta img{
+  width:48px;
+  height:48px;
+  border-radius:50%;
+  object-fit:cover;
+  flex-shrink:0;
+}
+
+.conteudo{
+  margin-left:200px;
+  padding:24px;
+  background:#F2F6FB;
+}
+.conteudo h1{
+  color:#0A2E5C;
+}
+.conteudo > p{
+  color:#4A5A6A;
+  margin-bottom:20px;
+}
+
+.cartoes{
+  display:grid;
+  grid-template-columns:repeat(4, 1fr);
+  gap:16px;
+  margin-bottom:24px;
+}
+.card{
+  background:#FFF;
+  border:1px solid #DCE2E8;
+  border-radius:10px;
+  padding:20px;
+}
+.card .icone{
+  width:42px;
+  height:42px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin-bottom:10px;
+}
+.card .icone.verde{ background:#1EA358; }
+.card .icone.azul{ background:#2A7DE1; }
+.card .icone.amarelo{ background:#F2B705; }
+.card .icone.roxo{ background:#7A5CFA; }
+
+.card h2{
+  font-size:14px;
+  color:#1A2C3D;
+}
+.card strong{
+  font-size:26px;
+  display:block;
+  margin:4px 0;
+}
+.card span{
+  font-size:12px;
+  color:#4A5A6A;
+}
+
+.proximas-consultas{
+  background:#FFF;
+  border:1px solid #DCE2E8;
+  border-radius:10px;
+  padding:16px;
+  margin-bottom:16px;
+}
+
+.cabecalho-secao{
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:12px;
+}
+.cabecalho-secao a{
+  color:#1351B4;
+  text-decoration:none;
+}
+.lista-consultas .consulta{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:12px 0;
+  border-bottom:1px solid #DCE2E8;
+}
+.consulta img{
+  width:48px;
+  height:48px;
+  border-radius:50%;
+}
+.consulta .info p{
+  font-size:12px;
+  color:#4A5A6A;
+}
+.botao{
+  margin-left:auto;
+  background:#1351B4;
+  color:#FFF;
+  padding:8px 12px;
+  border-radius:6px;
+  text-decoration:none;
+}
+
+.notificacao{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:12px;
+  border-bottom:1px solid #E6ECF2;
+}
+
+.acesso-rapido{
+  background:#FFF;
+  border:1px solid #DCE2E8;
+  border-radius:10px;
+  padding:16px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.acesso-rapido p{
+    background: #1351B4;
+    color: #FFF;
+    border:1px solid #DCE2E8;
+    border-radius:10px;
+    padding:16px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+  
+.rodape{
+  width:100%;
+  background:#0A2E5C;
+  color:#FFF;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:12px 20px;
+  font-size:12px;
+  clear:both;
+  margin-left:0;
+  box-sizing:border-box;
+}
+
+.rodape-esquerda{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.rodape-esquerda strong{
+  font-size:14px;
+}
+
+.rodape-direita{
+  display:flex;
+  gap:16px;
+}
+
+.rodape-direita a{
+  color:#FFF;
+  text-decoration:none;
+}
+
+.rodape-direita a:hover{
+  opacity:1;
+  text-decoration:underline;
+}
+
+
+    

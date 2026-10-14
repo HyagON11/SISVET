@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel do Tutor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="topo">
+        <div class="logo">
+            <span class="icone-logo">🐾</span>
+            <span>VetSaúde</span>
+        </div>
+
+        <details class="perfil">
+            <summary>
+                <img  src="avatar.jpg" alt="sua foto">
+                <span>sua foto</span>
+            </summary>
+            <div class="menu-perfil">
+                <a href="#">Meu Perfil</a>
+                <a href="#">Sair</a>
+            </div>
+        </details>
+    </header>
+
+    <aside class="sidebar">
+        <nav class="sidebar-menu">
+            <ul>
+                <li><a href="#">🏠 ​Início</a></li>
+                <li><a href="#">🐾 ​Meus animais</a></li>
+                <li><a href="#">​📄 ​Autorizações</a></li>
+                <li><a href="#">📃 Documentos</a></li>
+                <li><a href="#">👤 ​Perfil</a></li>
+                <li><a href="#">🚪 ​Sair</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+<main class="conteudo">
+    <h1>Meu Painel</h1>
+    <p>Aqui você encontra informações de saúde de seus animais e das próximas atividades.</p>
+
+    <div class="cartoes">
+        <div class="card">
+        <div class="icone verde">🐾</div>
+        <h2>Meus animais</h2>
+        <strong>2</strong>
+        <span>cadastrados</span>
+        </div>
+        
+        <div class="card">
+        <div class="icone azul">📅​</div>
+        <h2>Próximas consultas</h2>
+        <strong>2</strong>
+        <span>agendadas</span>
+        </div>
+
+        <div class="card">
+        <div class="icone amarelo">🔔​</div>
+        <h2>Notificações</h2>
+        <strong>2</strong>
+        <span>novas</span>
+        </div>
+
+        <div class="card">
+        <div class="icone roxo">🛡️​</div>
+        <h2>Autorizações</h2>
+        <strong>1</strong>
+        <span>ativa</span>
+        </div>
+
+    </div>
+
+    <section class="proximas-consultas">
+        <div class="cabecalho-secao">
+            <h2>Próximas consultas</h2>
+            <a href="#">Ver todas</a>
+        </div>
+
+        <div class="lista-consultas">
+            <article class="consulta">
+                <img src="foto-cachorro.jpg" alt="Foto do animal">
+                <div class="info">
+                    <h3>Nome do animal</h3>
+                    <p>tipo de consulta</p>
+                    <p>Data e hora</p>
+                    <p>clinica</p>
+                </div>>
+                <a href="#" class="botao">Ver detalhes</a>
+            </article>
+
+            <article class="consulta">
+                <img src="foto-gato.jpg" alt="Foto do animal">
+                <div class="info">
+                    <h3>Nome do animal</h3>
+                    <p>tipo de consulta</p>
+                    <p>Data e hora</p>
+                    <p>clinica</p>
+                </div>>
+                <a href="#" class="botao">Ver detalhes</a>
+            </article>
+        </div>
+    </section>
+
+    <section class="notificacoes">
+        <div class="cabecalho-secao">
+            <h2>Notificações</h2>
+            <a href="#">Ver todas</a>
+        </div>
+
+        <div class="lista-notificacoes">
+            <article class="notificacao">
+                <div class="icone-notificacoes">📜 Clinica solicitou acesso ao prontuário do animal</div>
+                <p>dia e hora</p>
+            </article>
+
+            <article class="notificacao">
+                <div class="icone-notificacoes">🔔 lembrete de consulta do animal</div>
+                <p>dia e hora</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="acesso-rapido">
+        <div class="cabecalho-secao">
+            <h2>Acesso rápido</h2>
+            <p>Adicionar animal</p>
+            <p>Ver todos os animais</p>
+        </div>
+    </section>
+</main>
+
+<footer class="rodape">
+    <div class="rodape-esquerda">
+        <strong>sisvet.br</strong>
+        <span>Ministério da Saúde<br>© 2026 - VetSaúde. Todos os direitos reservados.</span>
+    </div>
+    <div class="rodape-direita">
+        <a href="#">Acessibilidade</a>
+        <a href="#">Termos de uso</a>
+        <a href="#">Privacidade</a>
+    </div>
+</footer>
+    
